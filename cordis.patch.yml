@@ -1,0 +1,8 @@
+# dsh-prompt-enhance bundle patch.
+#
+# provider 只是首次运行时的默认值；此后以设置页保存的选择为准。
+- insert:
+    - id: prompt-enhance
+      name: 'dsh-prompt-enhance'
+      config:
+        provider: auto

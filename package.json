@@ -1,0 +1,36 @@
+{
+  "name": "dsh-prompt-enhance",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "为 DSH 输入框增加「增强提示词」按钮，并在设置中选择使用对话模型或 Pollinations 免登录通道。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/language.test.js test/route.test.js test/settings.test.js"
+  }
+}
