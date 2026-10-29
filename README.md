@@ -1,4 +1,4 @@
-# 提示词增强插件 (dsh-prompt-enhance)
+# 提示词增强插件 (dsh-prompt-enhance-keyless)
 
 给 DSH 输入框工具栏（模型选择器左侧）增加一枚「增强提示词」✨ 按钮，并在设置页里选择改写所用的模型来源。
 
@@ -45,8 +45,8 @@
 
 把本目录链接进 DSH profile（`~/.dsh/profiles/desktop`）：
 
-1. `package.json` 的 `dependencies` 加 `"dsh-prompt-enhance": "link:E:/提示词增强插件"`
-2. `dsh.profile.bundles` 加入 `dsh-prompt-enhance`
+1. `package.json` 的 `dependencies` 加 `"dsh-prompt-enhance-keyless": "link:E:/提示词增强插件"`
+2. `dsh.profile.bundles` 加入 `dsh-prompt-enhance-keyless`
 3. 在 `node_modules/` 下建立指向本目录的 junction
 4. 重启 DSH NEXT
 

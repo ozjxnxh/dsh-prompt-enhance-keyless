@@ -1,5 +1,5 @@
 {
-  "name": "dsh-prompt-enhance",
+  "name": "dsh-prompt-enhance-keyless",
   "version": "0.2.0",
   "type": "module",
   "description": "为 DSH 输入框增加「增强提示词」按钮，并在设置中选择使用对话模型或 Pollinations 免登录通道。",
